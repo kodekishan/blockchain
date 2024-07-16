@@ -130,7 +130,8 @@ def mine_block():
               'index': block['index'],
               'timestamp': block['timestamp'],
               'proof': block['proof'],
-              'previous_hash': block['previous_hash']}
+              'previous_hash': block['previous_hash'],
+              'transactions': block['transactions']}
   return jsonify(response), 200
 
 
