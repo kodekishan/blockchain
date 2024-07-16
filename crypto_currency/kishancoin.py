@@ -108,6 +108,11 @@ class Blockchain:
 app = Flask(__name__)
 #app.config['JSONIFY_PRETTYPRINT_REGULAR'] = False
 
+
+# Creating an address for the node on Port 5000
+node_address = str(uuid4()).replace('-','')
+
+
 # Creating a Blockchain
 blockchain = Blockchain()
 
