@@ -188,8 +188,7 @@ def is_valid():
   if is_chain_replaced:
     response = {'message': 'The node had different chains so the chain was replaced by the longest one.'}
   else:
-    response = {'message': "All good. The chain is the largest one.",
-                'actual_chain': blockchain.chain}
+    response = {'message': "All good. The chain is the largest one."}
   
   return jsonify(response), 200
       
