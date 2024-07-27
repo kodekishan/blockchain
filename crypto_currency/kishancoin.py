@@ -183,7 +183,7 @@ def connect_node():
 
 # Replacing the chain by the longest chain if needed
 @app.route("/replace_chain", methods=['GET'])
-def is_valid():
+def replace_chain():
   is_chain_replaced = blockchain.replace_chain()
   if is_chain_replaced:
     response = {'message': 'The node had different chains so the chain was replaced by the longest one.'}
